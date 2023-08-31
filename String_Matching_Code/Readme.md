@@ -1,41 +1,40 @@
-******String Pattern Matching Program******
+# C++ Regex Implementation
 
-This program helps you search for specific string patterns in a text file.
+This repository contains a C++ program that implements a simple regular expression search functionality. The program supports common regex elements like '.', '*', '+', and '?', allowing you to search for patterns in a given text file. The search results are then saved in an `output.txt` file.
 
-**Instructions**
-1)Input text file: Place the text file you want to search through in the String_Matching_Code folder.
+## Features
 
-2)Open IDE: Open your preferred C++ Integrated Development Environment (IDE) that supports C++ programming and can compile/run code.
+- Implementation of regex-like pattern searching using C++.
+- Supports '.' (dot), '*' (asterisk), '+' (plus), and '?' (question mark) regex elements.
+- Provides options for various pattern searches, including normal, dot, asterisk, plus, and question mark searches.
 
-3)Configure stringMatchingMain.cpp: In the stringMatchingMain.cpp file, configure the following variables in the main function:
+## Getting Started
 
-4)inputTextFile: Set the variable to the name of the input text file that you placed in the String_Matching_Code folder.
-pattern: Set the variable to the string pattern you want to search for in the text file.
-Example:
+1. Clone the repository using the following command:
+git clone https://github.com/your-username/CppRegexImplementation.git
+2. Compile the C++ source code: g++ -o regex_search main.cpp
+3. Run the program: ./regex_search
 
-inputTextFile = "input.txt"
-pattern = "examplepattern"
+4. View the search results in the `output.txt` file.
 
-5)Compile and run: Compile and run the stringMatchingMain.cpp code in your IDE. This will execute the program and search for the specified pattern in the input text file.
+## Usage
 
-6)Check results: After successful compilation and running, the program will generate an output text file named output.txt in the String_Matching_Code folder. This file will contain the search results.
+1. Edit the `testRun.txt` file to include the text in which you want to search for patterns.
+2. Modify the `pattern` variable in the `main.cpp` file to set the regex pattern you want to search for.
 
-7)Review output: Open the output.txt file to see the search results. It will display information about where the specified pattern was found in the input text file.
+## Pattern Types
 
-**Note**
-If you need to search for different patterns, make sure to clear the output.txt file before running the program again.
+- **Normal Search:** Search for a regular pattern without any special symbols.
+- **Dot Search:** Search for a pattern containing a dot ('.') to match any character.
+- **Asterisk Search:** Search for a pattern containing an asterisk ('*') to match zero or more occurrences of the preceding character.
+- **Plus Search:** Search for a pattern containing a plus ('+') to match one or more occurrences of the preceding character.
+- **Question Mark Search:** Search for a pattern containing a question mark ('?') to match zero or one occurrence of the preceding character.
 
-**Searching Pattern Constraints**
-This program supports the following regex patterns:
+## Contributions
 
-Plain text: Matches any word without special regex characters.
-`. (dot):** Matches any single character except a newline.
-`*:** Matches zero or more occurrences of the preceding character or group.
-`+:** Matches one or more occurrences of the preceding character or group.
-`?:** Matches zero or one occurrence of the preceding character or group.
-**At a time, you can use only one special regex character.**
+Contributions are welcome! If you find bugs or want to enhance the program, feel free to open issues or pull requests.
 
-Example:
+## Acknowledgments
 
-cre*k is valid.
-c.e*k is not valid within this program, as it contains both . and * in the same pattern.
+- This project was created to showcase the implementation of simple regex-like search functionality in C++.
+ 
